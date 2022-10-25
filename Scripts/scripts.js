@@ -1,14 +1,12 @@
 
-
-
 const modalEl = document.getElementById('info-popup');
 const privacyModal = new Modal(modalEl, {
     placement: 'center'
 });
 
-const accessClick = document.getElementById('access-button');
+const accessClick = document.getElementById('.access-button');
 accessClick.addEventListener('click', function() {
-    privacyModal.show();
+    modalEl.show();
 });
 
 const closeModalEl = document.getElementById('close-modal');
@@ -21,3 +19,4 @@ acceptPrivacyEl.addEventListener('click', function() {
     alert('privacy accepted');
     privacyModal.hide();
 });
+
