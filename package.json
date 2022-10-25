@@ -1,0 +1,16 @@
+{
+  "name": "indiworker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "daisyui": "^2.33.0",
+    "flowbite": "^1.5.3",
+    "tailwindcss": "^3.2.1"
+  }
+}
