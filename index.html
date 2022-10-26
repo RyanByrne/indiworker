@@ -9,6 +9,7 @@
     <meta name="author" content="2099">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" type="image/x-icon" href="/img/favicon.svg">
 </head>
 <body>
@@ -16,11 +17,11 @@
         <nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
             <div class="container flex flex-wrap justify-between items-center mx-auto">
             <a href="/index.html" class="flex items-center">
-                <img src="img/logo-v6.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">HRAI</span>
+                <img src="img/logo-v6.svg" class="mr-3 h-6 sm:h-9" alt="hourlyrate.ai Logo">
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">HR.ai</span>
             </a>
             <div class="flex md:order-2">
-                <button onclick="" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 border:white focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get Early Access</button>
+                <button id="early-access" onclick="highlightInput()" type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 border:white focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get Early Access</button>
                   <!-- <span class="sr-only">Open main menu</span>
                   <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg> -->
               </button>
@@ -49,11 +50,11 @@
         <section class="bg-gray-900 pb-60 pt-60">
             <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
                 <a href="#" class="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm rounded-full bg-gray-800 text-white hover:text-gray-600 hover:bg-gray-200" role="alert">
-                    <span class="text-xs bg-primary-600 rounded-full text-blue-600 hover:text-gray-600 px-4 py-1.5 mr-3">New</span> <span class="text-sm font-medium">Currently accepting early access</span> 
+                    <span class="text-xs bg-primary-600 rounded-full text-blue-600 hover:text-gray-600 px-4 py-1.5 mr-3">New</span> <span class="text-sm font-medium">Beta testing to commence early 2023</span> 
                     <svg class="ml-2 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
                 </a>
-                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white"><span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">Supercharge</span> your freelancing with <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-blue-500">AI</span></h1>
-                <p class="mb-8 text-lg font-normal lg:text-xl sm:px-16 xl:px-48 text-gray-400">Do you guess your hourly rate? Do you never know when to start looking for new projects? Do you know how you stack up against the market? No? You need Indiworker!</p>
+                <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white"><span class="text-transparent bg-clip-text background-animate bg-gradient-to-r from-cyan-500 to-blue-500">Supercharge</span> your freelancing with <span class="text-transparent bg-clip-text bg-gradient-to-r background-animate from-cyan-500 to-blue-500">AI</span></h1>
+                <p class="mb-8 text-lg font-normal lg:text-xl sm:px-16 xl:px-48 text-gray-400">Do you guess your hourly rate? Struggle to decide when to look for new projects? Do you know how you stack up against the competition? We didn't either. That's why we created HR.ai</p>
                 <form data-netlify="true" action="../pages/success" name="Early Access Form" action="#">
                     <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
                         <div class="relative w-full">
@@ -61,58 +62,58 @@
                             <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                                 <svg class="w-5 h-5 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
                             </div>
-                            <input name="email address" class="block p-3 pl-10 w-full text-sm rounded-lg border  sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Enter your email address" type="email" id="email" required="">
+                            <input id="main-input" name="email address" class="block p-3 pl-10 w-full text-sm rounded-lg border  sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 bg-gray-700 border-gray-600 placeholder-gray-400 text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Enter your email address" type="email" id="email" required="">
                         </div>
                         <div>
                             <button type="submit" class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border-white-500 cursor-pointer bg-blue-700 sm:rounded-none sm:rounded-r-lg bg-primary-600 hover:bg-blue-800 focus:ring-blue-800 whitespace-nowrap">Get Early Access</button>
                         </div>
                     </div>
-                    <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">We care about your data and never spam. </div>
+                    <div class="mx-auto max-w-screen-sm text-sm text-left text-gray-500 newsletter-form-footer dark:text-gray-300">Want to be a beta tester and get free lifetime access? <a class="text-white underline" href="#">Sign up here.</a></div>
                 </form>
             </div>
         </section> <!-- End of Hero Section -->
 
         <section class="bg-white">
-            <div class=" mx-auto max-w-screen-xl sm:py-32 lg:px-6">
-                <div class="max-w-screen-md mb-8 lg:mb-16">
-                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">It's like analytics for freelancers.</h2>
-                    <p class="text-gray-500 sm:text-xl">Indieworker gives you the data you need to maximise profit and plan for the future. After all, you are supposed to be your own boss.</p>
+            <div class="mx-10 my-10 max-w-screen-xl sm:py-32 lg:px-12">
+                <div class="max-w-screen-md mb-16 lg:mb-16">
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900">Market analytics for freelancers.</h2>
+                    <p class="text-gray-500 sm:text-xl">We give you the data you need to maximise profit and plan for the future. After all, you are supposed to be your own boss.</p>
                 </div>
-                <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-12 md:space-y-0">
+                <div class="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-6 md:space-y-0">
                     <div>
                         <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12">
                             <svg class="hover:animate-bounce w-5 h-5 text-primary-600 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 0l-2 2a1 1 0 101.414 1.414L8 10.414l1.293 1.293a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                         </div>
-                        <h3 class="mb-2 text-xl font-bold">Rate Maximiser</h3>
-                        <p class="text-gray-500">Ever wonder how to calculate your hourly rate? Our algorithm uses data from thousands of freelancers to give you the optimum rate for your skills and experience and platform.</p>
+                        <h3 class="mb-2 text-xl font-bold">Rate Maximizer</h3>
+                        <p class="text-gray-500">Ever wonder how to calculate your hourly rate? Our algorithm uses data from thousands of freelancers, clients & the market to give you your personalised optimal rate.</p>
                     </div>
                     <div>
                         <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12">
                             <svg class="hover:animate-bounce w-5 h-5 text-primary-600 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path></svg>
                         </div>
                         <h3 class="mb-2 text-xl font-bold">Benchmarking</h3>
-                        <p class="text-gray-500 dark:text-gray-400">Benchmark yourself against similar freelancers in the field and see how you stack up and where to improve.</p>
+                        <p class="text-gray-500 dark:text-gray-400">Benchmark yourself against other freelancers to see how you stack up along with tips on how to improve and even the types of clients your should be working with.</p>
                     </div>
                     <div>
                         <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12">
                             <svg class="hover:animate-bounce w-5 h-5 text-primary-600 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd"></path><path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z"></path></svg>                    
                         </div>
                         <h3 class="mb-2 text-xl font-bold">Company Matcher</h3>
-                        <p class="text-gray-500">Get matched to companies that hire your skillset and align with your values.</p>
+                        <p class="text-gray-500">Wondering what your can afford? Or looking for companies that match you skills? browse our database and get matched.</p>
                     </div>
                     <div>
                         <div class="flex hover:animate-bounce justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12">
                             <svg class="w-5 h-5 text-primary-600 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z"></path><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z" clip-rule="evenodd"></path></svg>
                         </div>
                         <h3 class="mb-2 text-xl font-bold">Plan Ahead</h3>
-                        <p class="text-gray-500">Use our AI financial planner to know when to start looking for a new job, how much you should pay yourself and plan for your future.</p>
+                        <p class="text-gray-500">Use our AI financial planner to know when to start looking for a new job, how to optimize your personal finances and plan for the future.</p>
                     </div>
                     <div>
                         <div class="flex justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12">
                             <svg class="hover:animate-bounce w-5 h-5 text-primary-600 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z"></path></svg>
                         </div>
                         <h3 class="mb-2 text-xl font-bold">Community</h3>
-                        <p class="text-gray-500 dark:text-gray-400">Join our community and discuss important topics with the experts.</p>
+                        <p class="text-gray-500 dark:text-gray-400">Join our Slack and Discord so share experiences, get advice and learn together. Not to mention prizes, giveaways and special events.</p>
                     </div>
                     <div>
                         <div class="flex hover:animate-bounce justify-center items-center mb-4 w-10 h-10 rounded-full bg-primary-100 lg:h-12 lg:w-12">
@@ -127,11 +128,11 @@
 
 
         <section class="bg-gray-900">
-            <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-32 lg:px-6">
+            <div class="gap-16 mx-10 my-10items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-32 lg:px-6">
                 <div class="font-light sm:text-lg text-gray-400">
-                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">Outsmart the freelance platforms</h2>
-                    <p class="mb-4">Freelance platforms are not transparent and do not have your best interests in mind. By empowering yourself with knowledge you can outsmart them and make them truly start working for you.</p>
-                    <p>Indiworker works on all major platforms including <span class="font-bold underline">, Fiverr, TopTal, Freelancer.com </span> and many more</p>
+                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-white">Outsmart the platforms with hr.ai</h2>
+                    <p class="mb-4">Freelance platforms are <a class ="underline text-white" href="#">not transparent</a> and do not have your best interests in mind. By empowering yourself with knowledge you can outsmart them and make them truly start working for you.</p>
+                    <p>hr.ai works on all major platforms including <span class="text-white underline">, Fiverr, TopTal, Freelancer.com </span> and many more</p>
                 </div>
                 <div class="grid grid-cols-2 gap-4 mt-8">
                     <img class="w-full hover:animate-bounce rounded-lg" src="img/stats.png" alt="office content 1">
@@ -156,18 +157,18 @@
         </section> End of CTA Section -->
 
         <section class="bg-white">
-            <div class="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-32 lg:px-6">
+            <div class="mx-10 my-10 max-w-screen-xl px-4 py-8 text-center lg:py-32 lg:px-6">
                 <figure class="max-w-screen-md mx-auto">
                     <svg class="h-12 mx-auto mb-3 text-gray-400" viewBox="0 0 24 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" fill="currentColor"/>
                     </svg> 
                     <blockquote>
-                        <p class="text-2xl font-medium text-gray-900">"Indiworker has taken my career to the next level. I finally beat the feast to famine and am in control of my own life."</p>
+                        <p class="text-2xl font-medium text-gray-900">"This has taken my career to the next level. I finally beat the feast to famine and feel in control of my own career."</p>
                     </blockquote>
                     <figcaption class="flex items-center justify-center mt-6 space-x-3">
                         <img class="w-6 h-6 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png" alt="profile picture">
                         <div class="flex items-center divide-x-2 divide-gray-500">
-                            <div class="pr-3 font-medium text-gray-900">Ryan Byrne</div>
+                            <div class="pr-3 font-medium text-gray-900">Nicole Badenhurst</div>
                             <div class="pl-3 text-sm font-light text-gray-500">Freelancer at TopTal</div>
                         </div>
                     </figcaption>
@@ -176,7 +177,7 @@
           </section> <!-- End Testimonial Section-->
 
           <section class="bg-gray-900">
-            <div class="gap-8 items-center py-8 px-4 mx-auto max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-32 lg:px-6">
+            <div class="gap-8 items-center py-8 px-4 mx-10 my-10 max-w-screen-xl xl:gap-16 md:grid md:grid-cols-2 sm:py-32 lg:px-6">
                 <img class="w-full hidden" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg" alt="dashboard image">
                 <img class="w-full block" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg" alt="dashboard image">
                 <div class="mt-4 md:mt-0">
@@ -192,18 +193,18 @@
 
     </main>
     <footer class="p-4 bg-white md:p-8 lg:p-10 dark:bg-gray-800">
-        <div class="mx-auto max-w-screen-xl text-center">
+        <div class="mx-10 my-10 max-w-screen-xl text-center">
             <a href="#" class="flex justify-center items-center text-2xl font-semibold text-gray-900 dark:text-white">
-                <img src="img/logo-v6.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
-                 HRAI    
+                <img src="img/logo-v6.svg" class="mr-3 h-6 sm:h-9" alt="hourlyrate.ai Logo">
+                 HR.ai    
             </a>
             <p class="my-6 text-gray-500 dark:text-gray-400">hourlyrate.ai is a product create by 2099 pty ltd in Cape Town South Africa.</p>
        
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2021-2022 <a href="#" class="hover:underline">2099™</a>. All Rights Reserved.</span>
         </div>
       </footer>
-      <script src="scripts/scripts.js"></script>
-      <script src="//code.tidio.co/uqjwpmhiw3phefhuo7qwt5exq4keo4di.js" async></script>
 </body>
+<script src="js/main.js"></script>
+<script src="//code.tidio.co/uqjwpmhiw3phefhuo7qwt5exq4keo4di.js" async></script>
 
 </html>

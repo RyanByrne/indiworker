@@ -26,11 +26,11 @@
 </filter>
 <radialGradient id="paint0_radial_18_200" x1="50%" y1="0%" x2="50%" y2="100%">
 <stop offset="0%" stop-color="#0D2CAC">
-                <animate attributeName="stop-color" values="#0D2CAC; #4780FF; #0D2CAC" dur="4s" repeatCount="indefinite"></animate>
+                <animate attributeName="stop-color" values="#0D2CAC; #50D3FA; #0D2CAC" dur="4s" repeatCount="indefinite"></animate>
             </stop>
 
-            <stop offset="100%" stop-color="#4780FF">
-                <animate attributeName="stop-color" values="#4780FF; #0D2CAC; #4780FF" dur="4s" repeatCount="indefinite"></animate>
+            <stop offset="100%" stop-color="#50D3FA">
+                <animate attributeName="stop-color" values="#50D3FA; #0D2CAC; #50D3FA" dur="4s" repeatCount="indefinite"></animate>
             </stop>
 </radialGradient>
 </defs>
