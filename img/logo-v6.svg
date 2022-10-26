@@ -1,4 +1,15 @@
 <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+<linearGradient id="logo-gradient" x1="50%" y1="0%" x2="50%" y2="100%" > 
+            
+            <stop offset="0%" stop-color="#7A5FFF">
+                <animate attributeName="stop-color" values="#7A5FFF; #01FF89; #7A5FFF" dur="4s" repeatCount="indefinite"></animate>
+            </stop>
+
+            <stop offset="100%" stop-color="#01FF89">
+                <animate attributeName="stop-color" values="#01FF89; #7A5FFF; #01FF89" dur="4s" repeatCount="indefinite"></animate>
+            </stop>
+
+        </linearGradient> 
 <g filter="url(#filter0_i_18_200)">
 <circle cx="18.5" cy="18.5" r="18.5" fill="url(#paint0_radial_18_200)"/>
 </g>
@@ -13,10 +24,15 @@
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
 <feBlend mode="normal" in2="shape" result="effect1_innerShadow_18_200"/>
 </filter>
-<radialGradient id="paint0_radial_18_200" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(18.5 18.5) rotate(88.9391) scale(27.0046)">
-<stop stop-color="#24A6CC"/>
-<stop offset="0.493829" stop-color="#2F70F4"/>
-<stop offset="0.892184" stop-color="#0D131E"/>
+<radialGradient id="paint0_radial_18_200" x1="50%" y1="0%" x2="50%" y2="100%">
+<stop offset="0%" stop-color="#0D2CAC">
+                <animate attributeName="stop-color" values="#0D2CAC; #4780FF; #0D2CAC" dur="4s" repeatCount="indefinite"></animate>
+            </stop>
+
+            <stop offset="100%" stop-color="#4780FF">
+                <animate attributeName="stop-color" values="#4780FF; #0D2CAC; #4780FF" dur="4s" repeatCount="indefinite"></animate>
+            </stop>
 </radialGradient>
 </defs>
 </svg>
+
