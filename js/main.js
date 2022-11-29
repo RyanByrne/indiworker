@@ -4,3 +4,4 @@ var input = document.getElementById("main-input")
 function highlightInput() {
     input.focus();
 }
+
